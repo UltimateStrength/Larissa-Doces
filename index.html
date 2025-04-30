@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Larissa Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+<!-- HEADER -->
+<header id="header">
+  <a href="index.html">
+    <img src="https://placehold.co/60x30?text=LOGO" alt="Logo" class="logo" />
+  </a>
+
+  <!-- Menu Desktop -->
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#cardápio">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <!-- Botão Menu Hambúrguer -->
+  <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+  <!-- Botão Carrinho -->
+  <button class="carrinho-btn">Carrinho</button>
+</header>
+
+  <!-- Menu Mobile -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#cardápio">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+
+    <div class="mobile-header">
+      <button class="carrinho-btn">Carrinho</button>
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+  <section class="banner" id="inicio">
+    <div class="carousel">
+      <div class="slides">
+        <img src="assets/banner1.jpg" class="slide" alt="Banner 1" />
+        <img src="assets/banner2.jpg" class="slide" alt="Banner 2" />
+        <img src="assets/banner3.jpg" class="slide" alt="Banner 3" />
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
+    <div class="carousel-hud">
+      <div class="hud-circle active" id="circle-1"></div>
+      <div class="hud-circle" id="circle-2"></div>
+      <div class="hud-circle" id="circle-3"></div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <main id="produtos">
+    <section class="text-section">
+      <h2>Cardápio</h2>
+      <p>Experimente os melhores doces!</p>
+    </section>
+      
+      <section class="produtos-grid">
+        <div class="produto-card">
+          <img src="https://placehold.co/300x200" alt="Produto 1" />
+          <h3>produto 1</h3>
+          <p>breve descriçao do produto</p>
+          <div class="botoes-produto">
+            <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            <button class="btn-comprar">Comprar Agora</button>
+          </div>
+        </div>
+      
+        <div class="produto-card">
+          <img src="https://placehold.co/300x200" alt="Produto 2" />
+          <h3>produto 2</h3>
+          <p>breve descriçao do produto</p>
+          <div class="botoes-produto">
+            <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            <button class="btn-comprar">Comprar Agora</button>
+          </div>
+        </div>
+      
+        <div class="produto-card">
+          <img src="https://placehold.co/300x200" alt="Produto 3" />
+          <h3>produto 3</h3>
+          <p>breve descriçao do produto</p>
+          <div class="botoes-produto">
+            <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            <button class="btn-comprar">Comprar Agora</button>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contato">
+    <div class="wave"></div>
+    <div class="footer-content">
+      <p>&copy; Larissa 2025 - Todos os direitos reservados</p>
+      <div class="socials">
+        <a href="#"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="assets/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="assets/facebook.png" alt="Facebook" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POPUPS -->
+  <a href="https://wa.me/SEUNUMERO" class="popup-whatsapp" target="_blank">
+    <img src="assets/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <button class="popup-topo" id="scrollTopBtn">&#8679;</button>
+
+  <!-- MODAL CARRINHO -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <span class="close-cart">&times;</span>
+      <h2>Seu Carrinho</h2>
+      <ul class="cart-items" id="cartItems"></ul>
+      <button id="finalizarCompra" class="btn-finalizar">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
