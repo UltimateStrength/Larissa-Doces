@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Larissa Site</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
@@ -18,10 +18,10 @@
   <!-- Menu Desktop -->
   <nav class="nav-links">
     <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#cardápio">Cardápio</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#inicio">INÍCIO</a></li>
+      <li><a href="#cardápio">CARDÁPIO</a></li>
+      <li><a href="#contato">CONTATO</a></li>
+      <li><a href="#sobre">SOBRE</a></li>
     </ul>
   </nav>
 
@@ -29,20 +29,27 @@
   <button class="menu-toggle" id="menuToggle">&#9776;</button>
 
   <!-- Botão Carrinho -->
-  <button class="carrinho-btn">Carrinho</button>
+  <button class="carrinho-btn">
+    <img src="assets/cart.png" alt="Carrinho" class="icon-cart" />
+    Carrinho
+  </button>
+
 </header>
 
   <!-- Menu Mobile -->
   <nav class="mobile-nav" id="mobileNav">
     <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#cardápio">Cardápio</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#inicio">INÍCIO</a></li>
+      <li><a href="#cardápio">CARDÁPIO</a></li>
+      <li><a href="#contato">CONTATO</a></li>
+      <li><a href="#sobre">SOBRE</a></li>
     </ul>
 
     <div class="mobile-header">
-      <button class="carrinho-btn">Carrinho</button>
+      <button class="carrinho-btn">
+        <img src="assets/cart.png" alt="Carrinho" class="icon-cart" />
+        Carrinho
+      </button>
     </div>
 
   </nav>
@@ -76,49 +83,77 @@
       <section class="produtos-grid">
         <div class="produto-card">
           <img src="https://placehold.co/300x200" alt="Produto 1" />
-          <h3>produto 1</h3>
-          <p>breve descriçao do produto</p>
+          <h3>Produto 1</h3>
+          <p>Breve descrição do produto</p>
+          <div class="quantidade-container">
+            <img src="assets/minus.png" class="btn-decremento">
+            <span class="quantidade" data-quantidade="0">0</span>
+            <img src="assets/plus.png" class="btn-incremento">
+          </div>
           <div class="botoes-produto">
-            <button class="btn-adicionar">Adicionar ao Carrinho</button>
-            <button class="btn-comprar">Comprar Agora</button>
+            <button class="btn-comprar" disabled>Comprar Agora</button>
+            <button class="btn-adicionar" disabled>
+              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+            </button>
           </div>
         </div>
       
         <div class="produto-card">
           <img src="https://placehold.co/300x200" alt="Produto 2" />
-          <h3>produto 2</h3>
-          <p>breve descriçao do produto</p>
+          <h3>Produto 2</h3>
+          <p>Breve descrição do produto</p>
+          <div class="quantidade-container">
+            <img src="assets/minus.png" class="btn-decremento">
+            <span class="quantidade" data-quantidade="0">0</span>
+            <img src="assets/plus.png" class="btn-incremento">
+          </div>
           <div class="botoes-produto">
-            <button class="btn-adicionar">Adicionar ao Carrinho</button>
-            <button class="btn-comprar">Comprar Agora</button>
+            <button class="btn-comprar" disabled>Comprar Agora</button>
+            <button class="btn-adicionar" disabled>
+              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+            </button>            
           </div>
         </div>
       
         <div class="produto-card">
           <img src="https://placehold.co/300x200" alt="Produto 3" />
-          <h3>produto 3</h3>
-          <p>breve descriçao do produto</p>
+          <h3>Produto 3</h3>
+          <p>Breve descrição do produto</p>
+          <div class="quantidade-container">
+            <img src="assets/minus.png" class="btn-decremento">
+            <span class="quantidade" data-quantidade="0">0</span>
+            <img src="assets/plus.png" class="btn-incremento">
+          </div>
           <div class="botoes-produto">
-            <button class="btn-adicionar">Adicionar ao Carrinho</button>
-            <button class="btn-comprar">Comprar Agora</button>
+            <button class="btn-comprar" disabled>Comprar Agora</button>
+            <button class="btn-adicionar" disabled>
+              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+            </button>
           </div>
         </div>
       </section>
-      
   </main>
 
-  <!-- FOOTER -->
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
   <footer id="contato">
-    <div class="wave"></div>
+  
     <div class="footer-content">
-      <p>&copy; Larissa 2025 - Todos os direitos reservados</p>
       <div class="socials">
         <a href="#"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
         <a href="#"><img src="assets/instagram.png" alt="Instagram" /></a>
         <a href="#"><img src="assets/facebook.png" alt="Facebook" /></a>
       </div>
+      <div class="footextr">
+        <p>&copy; Larissa 2025 - Todos os direitos reservados</p>
+        <p>Desenvolvido por <a href="https://github.com/UltimateStrength">Marcos (Ulti)</a></p>
+      </div>
     </div>
-  </footer>
+  </footer>  
 
   <!-- POPUPS -->
   <a href="https://wa.me/SEUNUMERO" class="popup-whatsapp" target="_blank">
@@ -132,11 +167,13 @@
     <div class="cart-content">
       <span class="close-cart">&times;</span>
       <h2>Seu Carrinho</h2>
+      <br>
       <ul class="cart-items" id="cartItems"></ul>
       <button id="finalizarCompra" class="btn-finalizar">Finalizar Compra</button>
     </div>
   </div>
 
   <script src="main.js"></script>
+
 </body>
 </html>
