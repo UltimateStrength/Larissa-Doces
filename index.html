@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Larissa Site</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -52,7 +55,7 @@
       </button>
     </div>
 
-  </nav>
+  </nav> 
 
   <!-- BANNER -->
   <section class="banner" id="inicio">
@@ -73,66 +76,165 @@
     </div>
   </section>
 
-  <!-- PRODUTOS -->
-  <main id="produtos">
-    <section class="text-section">
-      <h2>Cardápio</h2>
-      <p>Experimente os melhores doces!</p>
-    </section>
-      
-      <section class="produtos-grid">
-        <div class="produto-card">
-          <img src="https://placehold.co/300x200" alt="Produto 1" />
-          <h3>Produto 1</h3>
-          <p>Breve descrição do produto</p>
-          <div class="quantidade-container">
-            <img src="assets/minus.png" class="btn-decremento">
-            <span class="quantidade" data-quantidade="0">0</span>
-            <img src="assets/plus.png" class="btn-incremento">
-          </div>
-          <div class="botoes-produto">
-            <button class="btn-comprar" disabled>Comprar Agora</button>
-            <button class="btn-adicionar" disabled>
-              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
-            </button>
-          </div>
-        </div>
-      
-        <div class="produto-card">
-          <img src="https://placehold.co/300x200" alt="Produto 2" />
-          <h3>Produto 2</h3>
-          <p>Breve descrição do produto</p>
-          <div class="quantidade-container">
-            <img src="assets/minus.png" class="btn-decremento">
-            <span class="quantidade" data-quantidade="0">0</span>
-            <img src="assets/plus.png" class="btn-incremento">
-          </div>
-          <div class="botoes-produto">
-            <button class="btn-comprar" disabled>Comprar Agora</button>
-            <button class="btn-adicionar" disabled>
-              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
-            </button>            
-          </div>
-        </div>
-      
-        <div class="produto-card">
-          <img src="https://placehold.co/300x200" alt="Produto 3" />
-          <h3>Produto 3</h3>
-          <p>Breve descrição do produto</p>
-          <div class="quantidade-container">
-            <img src="assets/minus.png" class="btn-decremento">
-            <span class="quantidade" data-quantidade="0">0</span>
-            <img src="assets/plus.png" class="btn-incremento">
-          </div>
-          <div class="botoes-produto">
-            <button class="btn-comprar" disabled>Comprar Agora</button>
-            <button class="btn-adicionar" disabled>
-              <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
-            </button>
-          </div>
-        </div>
-      </section>
-  </main>
+<!-- PRODUTOS -->
+<main id="produtos">
+  <section class="text-section">
+    <h2>Cardápio</h2>
+    <p>Experimente os melhores doces!</p>
+  </section>
+
+  <section class="produtos-grid">
+    <!-- Produto 1 -->
+    <div class="produto-card">
+      <img src="assets/image1.png" alt="Kit Festa Pequeno" />
+      <h3>Kit Festa Pequeno <p>(10 a 15 pessoas)</p></h3>
+      <h3>Contém no kit:</h3>
+
+      <h4>
+        <img src="assets/descdoces.png" alt="Doces" class="icone-descricao" />
+        <strong>Doces:</strong>
+      </h4>
+      <ul>
+        <li>- 20 Brigadeiros Tradicionais;</li>
+        <li>- 10 Brigadeiros Gourmet;</li>
+        <li>- 10 Mini Trufas;</li>
+        <li>- 05 Pirulitos de Chocolate ou Cones Trufados.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descsalgados.png" alt="Salgados" class="icone-descricao" />
+        <strong>Salgados:</strong>
+      </h4>
+      <ul>
+        <li>- 30 Coxinhas;</li>
+        <li>- 30 Bolinhas de Queijo;</li>
+        <li>- 20 Risoles ou Enroladinhos.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descextra.png" alt="Extras" class="icone-descricao" />
+        <strong>Extras:</strong>
+      </h4>
+      <ul>
+        <li>- 01 Caixa ou bandeja decorada.</li>
+      </ul>
+
+      <div class="quantidade-container">
+        <img src="assets/minus.png" class="btn-decremento" />
+        <span class="quantidade" data-quantidade="0">0</span>
+        <img src="assets/plus.png" class="btn-incremento" />
+      </div>
+
+      <div class="botoes-produto">
+        <button class="btn-comprar" disabled>Comprar Agora</button>
+        <button class="btn-adicionar" disabled>
+          <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Produto 2 e 3: copie igual ao de cima, mudando só os dados -->
+    <!-- Só substituí os conteúdos para o Médio e Grande abaixo -->
+
+    <!-- Produto 2 -->
+    <div class="produto-card">
+      <img src="assets/image2.png" alt="Kit Festa Médio" />
+      <h3>Kit Festa Médio <p>(20 a 30 pessoas)</p></h3>
+      <h3>Contém no kit:</h3>
+
+      <h4>
+        <img src="assets/descdoces.png" alt="Doces" class="icone-descricao" />
+        <strong>Doces:</strong>
+      </h4>
+      <ul>
+        <li>- 40 Brigadeiros Tradicionais;</li>
+        <li>- 20 Brigadeiros Gourmet;</li>
+        <li>- 20 Mini Trufas;</li>
+        <li>- 10 Pirulitos de Chocolate ou Cones Trufados.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descsalgados.png" alt="Salgados" class="icone-descricao" />
+        <strong>Salgados:</strong>
+      </h4>
+      <ul>
+        <li>- 60 Coxinhas;</li>
+        <li>- 40 Bolinhas de Queijo;</li>
+        <li>- 40 Risoles ou Enroladinhos.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descextra.png" alt="Extras" class="icone-descricao" />
+        <strong>Extras:</strong>
+      </h4>
+      <ul>
+        <li>- 01 Caixa ou bandeja decorada.</li>
+      </ul>
+
+      <div class="quantidade-container">
+        <img src="assets/minus.png" class="btn-decremento" />
+        <span class="quantidade" data-quantidade="0">0</span>
+        <img src="assets/plus.png" class="btn-incremento" />
+      </div>
+
+      <div class="botoes-produto">
+        <button class="btn-comprar" disabled>Comprar Agora</button>
+        <button class="btn-adicionar" disabled>
+          <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="produto-card">
+      <img src="assets/image3.png" alt="Kit Festa Grande" />
+      <h3>Kit Festa Grande <p>(40 a 50 pessoas)</p></h3>
+      <h3>Contém no kit:</h3>
+
+      <h4>
+        <img src="assets/descdoces.png" alt="Doces" class="icone-descricao" />
+        <strong>Doces:</strong>
+      </h4>
+      <ul>
+        <li>- 60 Brigadeiros Tradicionais;</li>
+        <li>- 30 Brigadeiros Gourmet;</li>
+        <li>- 30 Mini Trufas;</li>
+        <li>- 20 Pirulitos de Chocolate ou Cones Trufados.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descsalgados.png" alt="Salgados" class="icone-descricao" />
+        <strong>Salgados:</strong>
+      </h4>
+      <ul>
+        <li>- 100 Coxinhas;</li>
+        <li>- 80 Bolinhas de Queijo;</li>
+        <li>- 70 Risoles ou Enroladinhos.</li>
+      </ul>
+
+      <h4>
+        <img src="assets/descextra.png" alt="Extras" class="icone-descricao" />
+        <strong>Extras:</strong>
+      </h4>
+      <ul>
+        <li>- 01 Caixa ou bandeja decorada.</li>
+      </ul>
+
+      <div class="quantidade-container">
+        <img src="assets/minus.png" class="btn-decremento" />
+        <span class="quantidade" data-quantidade="0">0</span>
+        <img src="assets/plus.png" class="btn-incremento" />
+      </div>
+
+      <div class="botoes-produto">
+        <button class="btn-comprar" disabled>Comprar Agora</button>
+        <button class="btn-adicionar" disabled>
+          <img src="assets/addcart.png" alt="Adicionar ao Carrinho" />
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
 
   <div class="waves">
     <div class="wave" id="wave1"></div>

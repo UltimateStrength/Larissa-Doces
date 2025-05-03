@@ -109,8 +109,15 @@ produtos.forEach(produto => {
 
   // Adicionar item ao carrinho
   btnAdicionar.addEventListener('click', () => {
-    adicionarAoCarrinho(produto.querySelector('h3').textContent, quantidade);
+    const h3 = produto.querySelector('h3');
+    const nomeProduto = Array.from(h3.childNodes)
+      .filter(node => node.nodeType === Node.TEXT_NODE) // pega só os textos "puros"
+      .map(node => node.textContent.trim())             // limpa espaços extras
+      .join(' ');                                        // junta se houver mais de um trecho de texto
+  
+    adicionarAoCarrinho(nomeProduto, quantidade);
   });
+  
 
   // Comprar item diretamente via WhatsApp
   btnComprar.addEventListener('click', () => {
@@ -123,11 +130,13 @@ produtos.forEach(produto => {
 // Remover item do carrinho
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('remover-item')) {
-    const nomeItem = e.target.parentElement.textContent.split(' - ')[0];
+    const li = e.target.closest('li'); // pega o <li> que contém o item
+    const nomeItem = li.textContent.split(' - ')[0].trim(); // isola o nome
+
     const index = cart.findIndex(item => item.nome === nomeItem);
     if (index !== -1) {
-      cart.splice(index, 1);
-      updateCart();
+      cart.splice(index, 1); // remove item
+      updateCart(); // atualiza a lista
     }
   }
 });
